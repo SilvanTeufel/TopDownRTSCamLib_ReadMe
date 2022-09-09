@@ -4,7 +4,7 @@ TopDownRTSCamLib - Readme - 2022
 
 If TopDownRTSCamLib is installed the Classes can be used as Parent Class in Blueprint, so all functions from this class are available.
 
-Just use one of the Following Classes as Parentclass and or just choose them in your GameMode-Blueprint. Category = TopDownRTSCamLib
+Just use one of the Following Classes as Parentclass and/or just choose them in your GameMode-Blueprint. Category = TopDownRTSCamLib
 
 Parentclasses are:
 
