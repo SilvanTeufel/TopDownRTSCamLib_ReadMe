@@ -144,3 +144,6 @@ bool IsSpacePressed = false;
 bool LockCameraToCharacter = false;
 TArray <ATopDownExampleCharacter*> SelectedActors;
 TArray <ATopDownExampleCharacter*> MovingActors;
+
+
+If you have any Issues or Questions Please Contact me via email: info@teufel-engineering.com
