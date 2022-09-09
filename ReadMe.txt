@@ -51,7 +51,7 @@ void CamLeft();                                     // Functionality is defined 
 void CamRight();                                    // Functionality is defined by Functionname
 void CamStop();                                     // Functionality is defined by Functionname
 void CamRotationTick();                             // Is Used For Rotation is generaly called in Tick
-void JumpCamera(FHitResult Hit);					// Jump Camera to Hit Position
+void JumpCamera(FHitResult Hit);                    // Jump Camera to Hit Position
 FVector2D GetMousePos2D();                          // Functionality is defined by Functionname
 void Zoom();                                        // Functionality is defined by Functionname
 void ZoomOutToPosition();                           // Functionality is defined by Functionname
@@ -74,27 +74,27 @@ bool MoveCamLeft = false;                           // Functionality is defined 
 bool MoveCamRight = false;                          // Functionality is defined by Functionname
 float startTime = 0.f;                              // Functionality is defined by Functionname
 int CamAngle = 0;                                   // Should not be changed. Is to keep Track of actual Angle
-bool DisableTick = false;                           // You can Disable My Tick Functions of Parent Class, to use my Function in Blueprint
-bool DisableBeginPlay = false;                      // You can Disable BeginPlay Functions of Parent Class, to use my Function in Blueprint
+bool DisableTick = false;                           // Disable My Tick Functions of Parent Class, to use my Function in Blueprint
+bool DisableBeginPlay = false;                      // Disable BeginPlay Functions of Parent Class, to use my Function in Blueprint
 class UWidgetComponent* ControlWidgetComp; -> Keyboard Widget (which is shown by pressing Tab)  // Functionality is defined by Functionname
-FRotator ControlWidgetRotation = FRotator(50, 180, 0);                                          // Rotation of The Widget
-FVector ControlWidgetLocation = FVector(400.f, -350.0f, -250.0f);                               // Location of the Widget when shown
-FVector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f);                          // Location of the Widget when hidden
-void HideControlWidget();                                                                       // Functionality is defined by Functionname
-void ShowControlWidget();                                                                       // Functionality is defined by Functionname
+FRotator ControlWidgetRotation = FRotator(50, 180, 0);                   // Rotation of The Widget
+FVector ControlWidgetLocation = FVector(400.f, -350.0f, -250.0f);        // Location of the Widget when shown
+FVector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f);   // Location of the Widget when hidden
+void HideControlWidget();                                                // Functionality is defined by Functionname
+void ShowControlWidget();                                                // Functionality is defined by Functionname
 
 
 
     -> RTSHud
 
-virtual void DrawHUD();                                 // used in Tick() to Draw the Selectionfield and trigger select.
-FVector2D InitialPoint;                                 // Position of mouse on screen when pressed;
-FVector2D CurrentPoint;                                 // Position of mouse on screen while holding;
-float RectangleScaleSelectionFactor = 0.9;              // Factor of inner/outer selection field
-FVector2D GetMousePos2D();                               // Functionality is defined by Functionname
-void AimToMouse();                                      // Actors can be triggert to Look to the Mouse
-void MoveActorsThroughWayPoints(TArray <ATopDownExampleCharacter*> Actors);  // This Function is called to Move Actors through Waypoints
-void StartMovingActors(TArray<ATopDownExampleCharacter*> Actors);   // This Function is called to Start Move Actors.
+virtual void DrawHUD();                      // used in Tick() to Draw the Selectionfield and trigger select.
+FVector2D InitialPoint;                      // Position of mouse on screen when pressed;
+FVector2D CurrentPoint;                      // Position of mouse on screen while holding;
+float RectangleScaleSelectionFactor = 0.9;   // Factor of inner/outer selection field
+FVector2D GetMousePos2D();                   // Functionality is defined by Functionname
+void AimToMouse();                           // Actors can be triggert to Look to the Mouse
+void MoveActorsThroughWayPoints(TArray <ATopDownExampleCharacter*> Actors);  // Move Actors through Waypoints
+void StartMovingActors(TArray<ATopDownExampleCharacter*> Actors);   // Start Move Actors.
 void setZeroActor(ATopDownExampleCharacter* Actor);       // Functionality is defined by Functionname       
 bool bStartSelecting = false;
 TArray <ATopDownExampleCharacter*> FoundActors;
