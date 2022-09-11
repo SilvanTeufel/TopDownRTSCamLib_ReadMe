@@ -19,6 +19,7 @@ Search for TopDownRTSCamLib and put a check mark at it.
 Open Unreal Editor. Go to Edit -> Project Settings -> Input (on left navigation) -> Import.
 Choose InputBackupTopDownRTSCamLib.ini from:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
+
 Repeat this step with DefaultInput.ini .
 
 If The Keybindings are not working you can check the Pictures in:
