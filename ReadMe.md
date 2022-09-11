@@ -65,7 +65,7 @@ You also have to set Lock Viewport on Mouse as "always".
 
 Here is a List of the Classes and there Functions:
 
-### Class - CameraPawn
+###Class - CameraPawn
 
 ```
 void CreateCameraComp();
@@ -267,8 +267,9 @@ void ShowControlWidget();
 
 ---
 
-    RTSHud
+###Class - RTSHud
 
+```
 virtual void DrawHUD();
 
 - Used in Tick() to Draw the Selectionfield and trigger select.
@@ -308,11 +309,12 @@ void setZeroActor(ATopDownExampleCharacter\* Actor);
 bool bStartSelecting = false;
 
 TArray <ATopDownExampleCharacter\*> FoundActors;
-
+```
 ---
 
-    RTSPlayerController
+###Class - RTSPlayerController
 
+```
 void ShiftPressed();
 
 void ShiftReleased();
@@ -388,4 +390,4 @@ bool LockCameraToCharacter = false;
 TArray <ATopDownExampleCharacter*> SelectedActors;
 
 TArray <ATopDownExampleCharacter*> MovingActors;
-
+```
