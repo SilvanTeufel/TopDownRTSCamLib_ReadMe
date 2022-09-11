@@ -65,7 +65,7 @@ You also have to set Lock Viewport on Mouse as "always".
 
 Here is a List of the Classes and there Functions:
 
-###Class - CameraPawn
+### Class - CameraPawn
 
 ```
 void CreateCameraComp();
@@ -267,7 +267,7 @@ void ShowControlWidget();
 
 ---
 
-###Class - RTSHud
+### Class - RTSHud
 
 ```
 virtual void DrawHUD();
@@ -312,7 +312,7 @@ TArray <ATopDownExampleCharacter\*> FoundActors;
 ```
 ---
 
-###Class - RTSPlayerController
+### Class - RTSPlayerController
 
 ```
 void ShiftPressed();
