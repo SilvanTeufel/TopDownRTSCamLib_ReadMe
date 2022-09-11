@@ -310,43 +310,78 @@ TArray <ATopDownExampleCharacter\*> FoundActors;
     RTSPlayerController
 
 void ShiftPressed();
+
 void ShiftReleased();
+
 void LeftClickPressed();
+
 void LeftClickReleased();
+
 void RightClickPressed();
+
 void SpacePressed();
+
 void SpaceReleased();
+
 void QPressed();
+
 void WPressed();
+
 void APressed();
+
 void AReleased();
+
 void JumpCamera();
+
 void StrgPressed();
+
 void StrgReleased();
+
 void ZoomIn();
+
 void ZoomOut();
+
 void ZoomStop();
+
 void CamLeft();
+
 void CamRight();
+
 void ControllDirectionToMouse(ATopDownExampleCharacter\* SelectedActor);
+
 void ToggleLockCameraToCharacter();
+
 void TabPressed();
+
 void TabReleased();
 
 void CameraPawnForward();
+
 void CameraPawnBackward();
+
 void CameraPawnLeft();
+
 void CameraPawnRight();
 
 void CameraPawnForwardR();
+
 void CameraPawnBackwardR();
+
 void CameraPawnLeftR();
+
 void CameraPawnRightR();
 
 bool IsShiftPressed = false;
+
 bool AIsPressed = false;
+
 bool IsStrgPressed = false;
+
 bool IsSpacePressed = false;
+
 bool LockCameraToCharacter = false;
+
 TArray <ATopDownExampleCharacter*> SelectedActors;
+
 TArray <ATopDownExampleCharacter*> MovingActors;
+
