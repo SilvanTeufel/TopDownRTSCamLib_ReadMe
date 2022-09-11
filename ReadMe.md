@@ -57,7 +57,7 @@ For CameraPawn, if you want only to use the Functions and not run the Code in Ti
 - DisableTick
 - DisableBeginPlay
 
-For RTSPlayerController, if you want to use the Controller, you have to adapt your Settings (Pictures in "Document/Inputs" Folder), or import the DefaultInput.ini inside the "Inputs" Folder.
+For RTSPlayerController, if you want to use the Controller, you have to adapt your Settings (Pictures in "Document/Inputs" Folder), or import the DefaultInput.ini and InputBackupTopDownRTSCamLib.ini inside the "Inputs" Folder.
 You also have to set Lock Viewport on Mouse as "always".
 
 ---
