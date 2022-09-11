@@ -83,13 +83,13 @@ Here is a List of the Classes and there Functions:
 
     void SpawnControllWidget();
 
-- Functionality is defined by Functionname
+    - Functionality is defined by Functionname
 
     FVector GetCameraPanDirection();
 
     void PanMoveCamera(const FVector& PanDirection);
 
-- Scrolling with Screen Edges This is Called in Tick generaly with CamSpeed: PanMoveCamera(GetCameraPanDirection() \* CamSpeed);
+    - Scrolling with Screen Edges This is Called in Tick generaly with CamSpeed: PanMoveCamera(GetCameraPanDirection() \* CamSpeed);
 
 float Margin = 15;
 
