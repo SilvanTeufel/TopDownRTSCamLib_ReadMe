@@ -7,18 +7,19 @@ Copyright 2022 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
 If you have downloaded the plugin it can be found in your Unreal Engine folder:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib (for example)
 If you can find this folder in your enginge plugins folder the download was successful.
+If the Plugin is in another Folder, you should copy it here.
 
 ## Install the Plugin
 
 Open Unreal Editor. Click Edit -> Plugins to open the plugin window.
 Search for TopDownRTSCamLib and put a check mark at it.
 
-## Import Keyboard Settings
+## Import Keyboard Settings (Only for RTSPlayerController)
 
 Open Unreal Editor. Go to Edit -> Project Settings -> Input (on left navigation) -> Import.
 Choose InputBackupTopDownRTSCamLib.ini from:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
-Repeat this step with DefaultInput.
+Repeat this step with DefaultInput.ini .
 
 If The Keybindings are not working you can check the Pictures in:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
