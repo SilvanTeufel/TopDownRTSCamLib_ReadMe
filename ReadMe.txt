@@ -2,6 +2,61 @@
 
 TopDownRTSCamLib - Readme - 2022
 
+////////// Download the Plugin //////////////////////////////////////////////////////////
+
+If you have downloaded the plugin it can be found in your Unreal Engine folder:
+C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib   (for example)
+If you can find this folder in your enginge plugins folder the download was successful.
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////// Install the Plugin //////////////////////////////////////////////////////////
+
+Open Unreal Editor. Click Edit -> Plugins to open the plugin window.
+Search for TopDownRTSCamLib and put a check mark at it.
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////// Import Keyboard Settings //////////////////////////////////////////////////////////
+
+Open Unreal Editor. Go to Edit -> Project Settings -> Input (on left navigation) -> Import.
+Choose InputBackupTopDownRTSCamLib.ini from:
+C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
+Repeat this step with DefaultInput.
+
+
+If The Keybindings are not working you can check the Pictures in:
+C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
+and create the Keybindings by yourself
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+////////// Test Example Map //////////////////////////////////////////////////////////
+
+Open Unreal Editor. Open Folder (In Unreal Editor Folder Tab):
+All\Engine\Plugins\TopDownRTSCamLib\Content\Level\
+
+
+Open Unreal Editor. Open Folder (In Unreal Editor Folder Tab):
+All\Engine\Plugins\TopDownRTSCamLib\Content\Level\
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////// Example Blueprints //////////////////////////////////////////////////////////
+
+Your can find Example Blueprints in the Unreal Editor as well:
+All\Engine\Plugins\TopDownRTSCamLib\Content\Blueprints
+
+This Blueprints use the Parentclasses from TopDownRTSCamLib Plugin, you can use for your Blueprints as well. 
+//////////////////////////////////////////////////////////////////////////////////////////
+
 If TopDownRTSCamLib is installed the Classes can be used as Parent Class in Blueprint, so all functions from this class are available.
 
 Just use one of the Following Classes as Parentclass and/or just choose them in your GameMode-Blueprint. Category = TopDownRTSCamLib
