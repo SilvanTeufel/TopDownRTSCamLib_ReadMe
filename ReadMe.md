@@ -14,7 +14,7 @@ If the Plugin is in another Folder, you should copy it here.
 Open Unreal Editor. Click Edit -> Plugins to open the plugin window.
 Search for TopDownRTSCamLib and put a check mark at it.
 
-## Import Keyboard Settings (Only for RTSPlayerController)
+## Import Keyboard Settings
 
 Open Unreal Editor. Go to Edit -> Project Settings -> Input (on left navigation) -> Import.
 Choose InputBackupTopDownRTSCamLib.ini from:
