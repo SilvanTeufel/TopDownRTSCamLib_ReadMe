@@ -67,17 +67,25 @@ Here is a List of the Classes and there Functions:
     CameraPawn
 
 void CreateCameraComp();
+
 USceneComponent* RootScene;
+
 USpringArmComponent* SpringArm;
+
 FRotator SpringArmRotator = FRotator(-50, 0, 0);
+
 UCameraComponent* CameraComp;
+
 APlayerController* PC;
+
 void GetViewPortScreenSizes(int x);
+
 void SpawnControllWidget();
 
 - Functionality is defined by Functionname
 
 FVector GetCameraPanDirection();
+
 void PanMoveCamera(const FVector& PanDirection);
 
 - Scrolling with Screen Edges This is Called in Tick generaly with CamSpeed: PanMoveCamera(GetCameraPanDirection() \* CamSpeed);
