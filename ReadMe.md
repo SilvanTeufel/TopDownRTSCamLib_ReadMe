@@ -80,9 +80,7 @@ void SpawnControllWidget();
 FVector GetCameraPanDirection();
 void PanMoveCamera(const FVector& PanDirection);
 
-- Scrolling with Screen Edges This is Called in Tick generaly with CamSpeed:
-
-PanMoveCamera(GetCameraPanDirection() \* CamSpeed);
+- Scrolling with Screen Edges This is Called in Tick generaly with CamSpeed: PanMoveCamera(GetCameraPanDirection() \* CamSpeed);
 
 float Margin = 15;
 
