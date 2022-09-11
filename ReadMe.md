@@ -83,7 +83,9 @@ void PanMoveCamera(const FVector& PanDirection);
 - Scrolling with Screen Edges This is Called in Tick generaly with CamSpeed:
 
 PanMoveCamera(GetCameraPanDirection() \* CamSpeed);
+
 float Margin = 15;
+
 int32 ScreenSizeX;
 
 - Screen Edge For Scrolling with Mouse
