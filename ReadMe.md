@@ -65,29 +65,29 @@ You also have to set Lock Viewport on Mouse as "always".
 
 Here is a List of the Classes and there Functions:
 
-    CameraPawn
+### Class - CameraPawn
 
-void CreateCameraComp();
+    void CreateCameraComp();
 
-USceneComponent* RootScene;
+    USceneComponent* RootScene;
 
-USpringArmComponent* SpringArm;
+    USpringArmComponent* SpringArm;
 
-FRotator SpringArmRotator = FRotator(-50, 0, 0);
+    FRotator SpringArmRotator = FRotator(-50, 0, 0);
 
-UCameraComponent* CameraComp;
+    UCameraComponent* CameraComp;
 
-APlayerController* PC;
+    APlayerController* PC;
 
-void GetViewPortScreenSizes(int x);
+    void GetViewPortScreenSizes(int x);
 
-void SpawnControllWidget();
+    void SpawnControllWidget();
 
 - Functionality is defined by Functionname
 
-FVector GetCameraPanDirection();
+    FVector GetCameraPanDirection();
 
-void PanMoveCamera(const FVector& PanDirection);
+    void PanMoveCamera(const FVector& PanDirection);
 
 - Scrolling with Screen Edges This is Called in Tick generaly with CamSpeed: PanMoveCamera(GetCameraPanDirection() \* CamSpeed);
 
