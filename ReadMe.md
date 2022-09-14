@@ -7,7 +7,7 @@ Copyright 2022 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
 If you have downloaded the plugin it can be found in your Unreal Engine folder:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib (for example)
 If you can find this folder in your enginge plugins folder the download was successful.
-If the Plugin is in another Folder, you should copy it here.
+If the plugin is in another folder, you should copy it here.
 
 ## Install the Plugin
 
@@ -22,51 +22,51 @@ C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCam
 
 Repeat this step with DefaultInput.ini .
 
-If The Keybindings are not working you can check the Pictures in:
+If the keybindings are not working you can check the pictures in:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
-and create the Keybindings by yourself
+and create the keybindings by yourself
 
 ## Test Example Map
 
-Open Unreal Editor. Open Folder (In Unreal Editor Folder Tab):
+Open Unreal Editor. Open folder (In Unreal Editor folder tab):
 All\Engine\Plugins\TopDownRTSCamLib\Content\Level\
 
-Open Unreal Editor. Open Folder (In Unreal Editor Folder Tab):
+Open Unreal Editor. Open folder (In Unreal Editor folder tab):
 All\Engine\Plugins\TopDownRTSCamLib\Content\Level\
 
 ## Example Blueprints
 
-Your can find Example Blueprints in the Unreal Editor as well:
+Your can find example Blueprints in the Unreal Editor as well:
 All\Engine\Plugins\TopDownRTSCamLib\Content\Blueprints
 
-This Blueprints use the Parentclasses from TopDownRTSCamLib Plugin, you can use for your Blueprints as well.
+This Blueprints use the Parent Classes from TopDownRTSCamLib Plugin, which you can use for your Blueprints as well.
 
 ## Parent Classes
 
-If TopDownRTSCamLib is installed the Classes can be used as Parent Class in Blueprint, so all functions from this class are available.
-Just use one of the Following Classes as Parentclass and or just choose them in your GameMode-Blueprint. Category = TopDownRTSCamLib
+If TopDownRTSCamLib is installed the Classes can be used as Parent Class in Blueprint, so all functions from this Class are available.
+Just use one of the following Classes as Parent Class and or just choose them in your GameMode Blueprint. Category = TopDownRTSCamLib
 
 Parentclasses are:
 
-- CameraPawn
-- RTSHud
-- RTSPlayerController
+- CameraBase
+- CharacterBase
+- HUDBase
+- ControllerBase
 - SelectedCharacterIcon
-- TopdownExampleCharacter
 
-For CameraPawn, if you want only to use the Functions and not run the Code in Tick and BeginPlay (which is automatically setup), just set the Variables to true:
+For CameraBase, if you want only to use the Functions and not run the Code in Tick and BeginPlay (which is automatically setup), just set the Variables to true:
 
 - DisableTick
 - DisableBeginPlay
 
-For RTSPlayerController, if you want to use the Controller, you have to adapt your Settings (Pictures in "Document/Inputs" Folder), or import the DefaultInput.ini and InputBackupTopDownRTSCamLib.ini inside the "Inputs" Folder.
+For ControllerBase, if you want to use the Controller, you have to adapt your Settings (Pictures in "Document/Inputs" Folder), or import the DefaultInput.ini and InputBackupTopDownRTSCamLib.ini inside the "Inputs" Folder.
 You also have to set Lock Viewport on Mouse as "always".
 
 ---
 
 Here is a List of the Classes and there Functions:
 
-### Class - CameraPawn
+### Class - CameraBase
 
 ```
 void CreateCameraComp();
@@ -268,7 +268,7 @@ void ShowControlWidget();
 
 ---
 
-### Class - RTSHud
+### Class - HUDBase
 
 ```
 virtual void DrawHUD();
@@ -313,7 +313,7 @@ TArray <ATopDownExampleCharacter\*> FoundActors;
 ```
 ---
 
-### Class - RTSPlayerController
+### Class - ControllerBase
 
 ```
 void ShiftPressed();
