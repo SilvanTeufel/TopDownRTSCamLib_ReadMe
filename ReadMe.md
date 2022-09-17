@@ -16,8 +16,10 @@ Search for TopDownRTSCamLib and put a check mark at it.
 
 ## Import Keyboard Settings
 
+__You can download DefaultInput.ini and InputBackupTopDownRTSCamLib.ini from here in github__
+
 Open Unreal Editor. Go to Edit -> Project Settings -> Input (on left navigation) -> Import.
-Choose InputBackupTopDownRTSCamLib.ini from:
+Choose InputBackupTopDownRTSCamLib.ini from or download from github:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
 
 Repeat this step with DefaultInput.ini .
