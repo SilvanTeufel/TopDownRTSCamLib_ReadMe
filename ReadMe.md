@@ -19,8 +19,10 @@ Search for TopDownRTSCamLib and put a check mark at it.
 __You can download DefaultInput.ini and InputBackupTopDownRTSCamLib.ini from here from github by clicking on top left Code->Download Zip__
 
 Open Unreal Editor. Go to Edit -> Project Settings -> Input (on left navigation) -> Import.
-Choose InputBackupTopDownRTSCamLib.ini from or download from github:
+Choose InputBackupTopDownRTSCamLib.ini from:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
+
+__or download from github__
 
 Repeat this step with DefaultInput.ini .
 
