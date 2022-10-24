@@ -4,6 +4,8 @@ Copyright 2022 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
 
 ## Download the Plugin
 
+https://www.unrealengine.com/marketplace/en-US/product/86b66e1dccc74679abc3e5c3eec2fd2a
+
 If you have downloaded the plugin it can be found in your Unreal Engine folder:
 C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib (for example)
 If you can find this folder in your enginge plugins folder the download was successful.
