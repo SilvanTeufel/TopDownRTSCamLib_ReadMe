@@ -2,6 +2,8 @@
 
 Copyright 2022 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
 
+For Questions you can write to info@teufel-engineering.com
+
 ## Download the Plugin
 
 https://www.unrealengine.com/marketplace/en-US/product/86b66e1dccc74679abc3e5c3eec2fd2a
