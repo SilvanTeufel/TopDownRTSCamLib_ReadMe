@@ -37,10 +37,8 @@ and create the keybindings by yourself
 ## Test Example Map
 
 Open Unreal Editor. Open folder (In Unreal Editor folder tab):
-All\Engine\Plugins\TopDownRTSCamLib\Content\Level\
+All\Engine\Plugins\TopDownRTSCamLib\Content\Level\levelOne
 
-Open Unreal Editor. Open folder (In Unreal Editor folder tab):
-All\Engine\Plugins\TopDownRTSCamLib\Content\Level\
 
 ## Example Blueprints
 
