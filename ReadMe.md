@@ -106,7 +106,7 @@ Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work
 |float ZoomPosition = 1500.f;         			                | Used for Healthbar Implementation.           			|
 |float ZoomThirdPersonPosition = 600.f;      				| MaxHealth of the Character. Use it to change MaxHealth        |
 |float CamRotationOffset = 11.5f;                                 	| Location of the Healthbar realtive to the Character		|
-|float CameraAngles[4] = { 0.f, 90.f, 180.f, 270.f };		          | Choose a ProjectileBaseClass if you want to use a Projectile|
+|float CameraAngles[4] = { 0.f, 90.f, 180.f, 270.f };		        | Choose a ProjectileBaseClass if you want to use a Projectile|
 	
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
