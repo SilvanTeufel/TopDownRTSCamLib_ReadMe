@@ -123,23 +123,26 @@ Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work
 	
 |Functions (BlueprintCallable)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|void IsAttacked(AActor* AttackingCharacter);       		| Gets called when Unit is attacked. Called in UnitControllerBase |
-|void SetWalkSpeed(float Speed);      				| Set Max Walkspeed           |
-|bool SetNextUnitToChase();        				| Chooses UnitToChase from UnitsToChase (closest unit is choosen) |
-|void SetWaypoint(class AWaypoint* NewNextWaypoint);        	| Sets the new Waypoint. Unit walks to Waypoint in State "Patrol" |
-|void SetUnitState( TEnumAsByte<UnitData::EState> NewUnitState);| Used to Set the State of the Unit (UnitControllerBase->UnitControlStateMachine) |
-|TEnumAsByte<UnitData::EState> GetUnitState();       		| Get the current Unit State          		|
-|float GetHealth();       					| Get current health of the Unit          	|
-|void SetHealth(float NewHealth);       			| Set current health of the Unit         	|
-|float GetMaxHealth();      					| Get max health of the Unit            	|
-|void SetSelected();       					| Sets the SelectedIcon selected           	|
-|void SetDeselected();      					| Sets the SelectedIcon delected            	|
-|void SpawnSelectedIcon();       				| Spawns the SelectedIcon         		|	
+|void CreateCameraComp();			   		| Created the CameraComp, called in Constructor |
+|void SpawnControllWidget();     				| Spawns the Controll Widget           |
+|void PanMoveCamera(const FVector& NewPanDirection);      	| Used for Edge scrolling inside the Tick |
+|void ZoomIn();						       	| Zoom Camera In |
+|void ZoomOut();						| Zoom Camera Out |
+|void ZoomStop();     						| Stops Zoom 					|
+|void CamLeft();      						| Moves Cam Left				|
+|void CamRight();      						| Moves Cam Right				|
+|bool RotateCamLeft(bool UseCamRotationOffset);   		| Changes YawValue for Left Rotation. SetControlRotation has to be called after.|
+|bool RotateCamRight(bool UseCamRotationOffset);      		| Changes YawValue for Right Rotation. SetControlRotation has to be called after.|
+|bool RotateCamLeftTo(float Position);    			| Changes YawValue +=1 till "Position" is reached          	|
+|bool RotateCamRightTo(float Position);       			| Changes YawValue -=1 till "Position" is reached          	  |	
+|void JumpCamera(FHitResult Hit);      				| Jump Camera to Hit Position.			          	  |	
+|FVector2D GetMousePos2D();      				| Gets Mouse Position via Controller |	
+|void Zoom();       						| Zooms the Camera          	  |	
+|void ZoomOutToPosition(float Distance, const FVector SelectedActorPosition = FVector(0.f,0.f,0.f)); | Zoom to Distance |	
+|bool ZoomInToPosition(float Distance, const FVector SelectedActorPosition = FVector(0.f,0.f,0.f)); | Zoom to Distance |	
 
 
-
-
-Here is a List of the Classes and there Functions ( V1.X.X):
+Here you can find the Classes with Porperties and Functions ( V1.X.X):
 
 ### Class - CameraBase
 
