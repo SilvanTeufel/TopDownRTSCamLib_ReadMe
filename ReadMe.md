@@ -111,6 +111,7 @@ Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work
 |FRotator ControlWidgetRotation = FRotator(50, 180, 0);	        	| Choose a Rotation for the Widget |
 |FVector ControlWidgetLocation = FVector(400.f, -350.0f, -250.0f);	| Choose a Location for the Widget |
 |Vector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f);	| Choose a Hidden Location for the Widget |
+|TEnumAsByte<CameraData::CameraState> CameraState = CameraData::UseScreenEdges;	| CameraState used for Statemachine in CamController |
 	
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
@@ -140,6 +141,19 @@ Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work
 |void Zoom();       						| Zooms the Camera          	  |	
 |void ZoomOutToPosition(float Distance, const FVector SelectedActorPosition = FVector(0.f,0.f,0.f)); | Zoom to Distance |	
 |bool ZoomInToPosition(float Distance, const FVector SelectedActorPosition = FVector(0.f,0.f,0.f)); | Zoom to Distance |	
+|void LockOnCharacter(ACharacter* SelectedActor); | Locks Cam to Character |	
+|bool IsCharacterDistanceTooLow(float Distance, const FVector SelectedActorPosition = FVector(0.f,0.f,0.f)); | Checks if Distance is to Low when Cam is locked to Character |	
+|bool ZoomInToThirdPerson(const FVector SelectedActorPosition = FVector(0.f,0.f,0.f)); | Zooms to Third Person |	
+|bool IsCameraInAngle() | Checks if one of the CamAngles is reached. Used for Rotation |	
+|void MoveCamToForward(); | Moves Cam Forward |	
+|void MoveCamToBackward(); | Moves Cam Backward |	
+|void MoveCamToLeft(); | Moves Cam to the Left |	
+|void MoveCamToRight(); | Moves Cam to the Right |	
+|void HideControlWidget(); | Hides the ControlWidget |	
+|void ShowControlWidget(); | Shows the ControllWidget |	
+|void SetCameraState(TEnumAsByte<CameraData::CameraState> NewCameraState); | Sets the CameraState |	
+|TEnumAsByte<CameraData::CameraState> GetCameraState(); | Get the CameraState |
+
 
 
 Here you can find the Classes with Porperties and Functions ( V1.X.X):
