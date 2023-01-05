@@ -28,6 +28,11 @@ Maps & Modes Backup 2023-01-04 211553.ini  -> Project Settings -> Maps and Modes
 
 These files should be also available inside the Plugins Folder in Documents/Inputs
 
+Or Set Keybindings by yourself:
+
+![image](https://user-images.githubusercontent.com/45244380/210752301-ea1f1aa5-5802-4594-8838-61cbf79ff117.png)
+
+
 
 ## Test Example Map
 
