@@ -1,8 +1,9 @@
 # TopDownRTSCamLib - Readme - 2022
 
 Copyright 2022 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
-
 For Questions you can write to info@teufel-engineering.com
+
+V 1.X.X is deprecated soon, pleas switch to Version 2.X.X
 
 ## Download the Plugin
 
@@ -18,21 +19,15 @@ If the plugin is in another folder, you should copy it here.
 Open Unreal Editor. Click Edit -> Plugins to open the plugin window.
 Search for TopDownRTSCamLib and put a check mark at it.
 
-## Import Keyboard Settings
+## Import Keyboard Settings and Maps and Modes
 
-__You can download DefaultInput.ini and InputBackupTopDownRTSCamLib.ini from here from github by clicking on top left Code->Download Zip__
+Download here from Github:
 
-Open Unreal Editor. Go to Edit -> Project Settings -> Input (on left navigation) -> Import.
-Choose InputBackupTopDownRTSCamLib.ini from:
-C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
+Input Backup 2023-01-04 092036.ini -> Project Settings -> Input -> Import
+Maps & Modes Backup 2023-01-04 211553.ini  -> Project Settings -> Maps and Modes -> Import
 
-__or download from github__
+These files should be also available inside the Plugins Folder in Documents/Inputs
 
-Repeat this step with DefaultInput.ini .
-
-If the keybindings are not working you can check the pictures in:
-C:\Program Files\Epic Games\UE_5.0\Engine\Plugins\TopDownRTSCamLib\TopDownRTSCamLib\Document\Inputs
-and create the keybindings by yourself
 
 ## Test Example Map
 
