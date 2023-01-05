@@ -95,18 +95,18 @@ Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work
 |USpringArmComponent* SpringArm;          				| The SpringArm         					|
 |FRotator SpringArmRotator = FRotator(-50, 0, 0);			| Used to rotate the SpringArm in Constructor			|
 |UCameraComponent* CameraComp;        					| The CameraComponent         					|
-|APlayerController* PC;          				        | Is Pointing to the ControllerBase (Parent of CameraControllerBase |
-|float CameraDistanceToCharacter;					| Choose to Scale the Speed in "Run" 4 is Standard		|
-|float Margin = 30;      				                | Stops when Position is only 100.f away	       		|
-|int32 ScreenSizeX;           				                | Stops if Y-Position is only 400.f away        		|
-|int32 ScreenSizeY;         					        | The Damage that the Unit Makes when attacking        		|
-|int GetViewPortScreenSizesState = 1;      				| The Start Waypoint when Unit is in "Patrol"	        	|
-|float CamSpeed = 80;		                                        | Choose the Start UnitState. For Enemys it should be Patrol	|
-|float ZoomOutPosition = 20000.f;	                                | This is used to Switch the UnitState back from other States	|
-|float ZoomPosition = 1500.f;         			                | Used for Healthbar Implementation.           			|
-|float ZoomThirdPersonPosition = 600.f;      				| MaxHealth of the Character. Use it to change MaxHealth        |
-|float CamRotationOffset = 11.5f;                                 	| Location of the Healthbar realtive to the Character		|
-|float CameraAngles[4] = { 0.f, 90.f, 180.f, 270.f };		        | Choose a ProjectileBaseClass if you want to use a Projectile|
+|APlayerController* PC;          				        | Is Pointing to the ControllerBase (Parent of CameraControllerBase) |
+|float CameraDistanceToCharacter;					| Is used to Hold the Camera Distance to Character when Cam is locked to Chararcter |
+|float Margin = 30;      				                | Distance to Screenedges where Edgescrolling should start	|
+|int32 ScreenSizeX;           				                | Is set in BeginPlay of CamControler by  GetViewPortScreenSizes() |
+|int32 ScreenSizeY;         					        | Is set in BeginPlay of CamControler by  GetViewPortScreenSizes() |
+|int GetViewPortScreenSizesState = 1;      				| 1 is for Viewport 2 for System Resolution - used in GetViewPortScreenSizes() |
+|float CamSpeed = 80;		                                        | Choose a Multiplier for the CamSpeed	|
+|float ZoomOutPosition = 20000.f;	                                | STRG + HOLD Space Position |
+|float ZoomPosition = 1500.f;         			                | Normal RTS-Cam Distance |
+|float ZoomThirdPersonPosition = 600.f;      				| Distance to Character in Third Person |
+|float CamRotationOffset = 11.5f;                                 	| Is used when Rotating around Character. This Offset Moves the Cam in x/y while rotating |
+|float CameraAngles[4] = { 0.f, 90.f, 180.f, 270.f };		        | Choose a for CamAngles where the Camera should stop, when rotating |
 	
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
