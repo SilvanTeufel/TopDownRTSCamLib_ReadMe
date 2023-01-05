@@ -3,7 +3,7 @@
 Copyright 2022 Silvan Teufel / Teufel-Engineering.com All Rights Reserved.
 For Questions you can write to info@teufel-engineering.com
 
-V 1.X.X is deprecated soon, pleas switch to Version 2.X.X
+V 1.X.X is deprecated soon, please switch to Version 2.X.X
 
 ## Download the Plugin
 
