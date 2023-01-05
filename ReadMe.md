@@ -94,8 +94,8 @@ Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work
 |USceneComponent* RootScene;         				        | The RootScene      						|
 |USpringArmComponent* SpringArm;          				| The SpringArm         					|
 |FRotator SpringArmRotator = FRotator(-50, 0, 0);			| Used to rotate the SpringArm in Constructor			|
-|UCameraComponent* CameraComp;        					| Unit Max Run Speed          					|
-|APlayerController* PC;          				        | Slow Down when EnemyUnit is Attacked				|
+|UCameraComponent* CameraComp;        					| The CameraComponent         					|
+|APlayerController* PC;          				        | Is Pointing to the ControllerBase (Parent of CameraControllerBase |
 |float CameraDistanceToCharacter;					| Choose to Scale the Speed in "Run" 4 is Standard		|
 |float Margin = 30;      				                | Stops when Position is only 100.f away	       		|
 |int32 ScreenSizeX;           				                | Stops if Y-Position is only 400.f away        		|
