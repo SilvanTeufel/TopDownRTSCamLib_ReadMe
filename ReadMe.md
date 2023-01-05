@@ -107,20 +107,19 @@ Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work
 |float ZoomThirdPersonPosition = 600.f;      				| Distance to Character in Third Person |
 |float CamRotationOffset = 11.5f;                                 	| Is used when Rotating around Character. This Offset Moves the Cam in x/y while rotating |
 |float CameraAngles[4] = { 0.f, 90.f, 180.f, 270.f };		        | Choose a for CamAngles where the Camera should stop, when rotating |
+|class UWidgetComponent* ControlWidgetComp;		       		| Choose a controll Widget |
+|FRotator ControlWidgetRotation = FRotator(50, 180, 0);	        	| Choose a Rotation for the Widget |
+|FVector ControlWidgetLocation = FVector(400.f, -350.0f, -250.0f);	| Choose a Location for the Widget |
+|Vector ControlWidgetHideLocation = FVector(400.f, -2500.0f, -250.0f);	| Choose a Hidden Location for the Widget |
 	
 
 |Properties (BlueprintReadWrite)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
-|float UnitControlTimer = 0.0f;        				| Used in UnitControllerBase Statemachine            |
-|bool ToggleUnitDetection = false;				| Is Used in ControllerBase to toggle unit to Attack |
-|AUnitBase* UnitToChase;       					| Is set to the Unit which should be attacked        |
-|TArray <AUnitBase*> UnitsToChase;          			| Array of all available Units		             |
-|float Health;							| Current Health of the Unit			     |
-|TArray <FVector> RunLocationArray;				| Used for MoveThroughWaypoints in the HUD	     |
-|int32 RunLocationArrayIterator;				| Used for the Iteration of the Array		     |
-|FVector RunLocation;						| Is the Location where the Unit should Run. Used in "Run"|
-|class ASelectedIcon* SelectedIcon;				| The Icon is Hidden when Character is not selected|
-|class AProjectile* Projectile;					| The Current Projectile|
+| float YawValue = 0.f;        					| Of the Camera / SetControlrotation to Rotate       |
+| float PitchValue = 0.f;					| Of the Camera / SetControlrotation to Rotate       |
+| float RollValue = 0.f;       					| Of the Camera / SetControlrotation to Rotate       |
+| RotationDegreeStep        					| Used for Rotation	             |
+
 	
 |Functions (BlueprintCallable)                  		|Note                         |
 |---------------------------------------------------------------|-----------------------------|
