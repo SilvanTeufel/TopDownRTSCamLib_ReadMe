@@ -60,12 +60,87 @@ For CameraBase, if you want only to use the Functions and not run the Code in Ti
 - DisableTick
 - DisableBeginPlay
 
-For ControllerBase, if you want to use the Controller, you have to adapt your Settings (Pictures in "Document/Inputs" Folder), or import the DefaultInput.ini and InputBackupTopDownRTSCamLib.ini inside the "Inputs" Folder.
+For ControllerBase, if you want to use the Controller, you have to adapt your Settings (Pictures in "Document/Inputs" Folder), or import the 
+"Input Backup 2023-01-04 092036.ini" and "Maps & Modes Backup 2023-01-04 211553.ini" inside the "Inputs" Folder, or download from Github.
 You also have to set Lock Viewport on Mouse as "always".
 
 ---
 
-Here is a List of the Classes and there Functions:
+Here you can find the Classes with Porperties and Functions (V2.X.X - is in Work):
+
+
+# CameraBase
+
+|CameraState (The Statemachine is used in CamerControllerBase)        	|Note                         |
+|---------------------------------------------------------------|-----------------------------|
+|UseScreenEdges     UMETA(DisplayName = "UseScreenEdges")       | CharAnimState = UseScreenEdges	      |
+|MoveForward  UMETA(DisplayName = "MoveForward"),    			        | CharAnimState = MoveForward         |
+|MoveBackward   UMETA(DisplayName = "MoveBackward"),    			     | CharAnimState = MoveBackward      |
+|MoveLeft   UMETA(DisplayName = "MoveLeft"),      			           | CharAnimState = MoveLeft        |
+|MoveRight   UMETA(DisplayName = "MoveRight"),			               | CharAnimState = MoveRight      |
+|ZoomIn  UMETA(DisplayName = "ZoomIn"),     		                 	| CharAnimState = ZoomIn       |
+|ZoomOut  UMETA(DisplayName = "ZoomOut"),  			                 	| CharAnimState = ZoomOut       |
+|ZoomOutPosition  UMETA(DisplayName = "ZoomOutPosition") ,     	| CharAnimState = ZoomOutPosition  |
+|ZoomInPosition  UMETA(DisplayName = "ZoomInPosition"),   			  	| CharAnimState = ZoomInPosition        |
+|RotateLeft UMETA(DisplayName = "RotateLeft"),               			| CharAnimState = RotateLeft        |
+|RotateRight UMETA(DisplayName = "RotateRight"),              		| CharAnimState = RotateRight        |
+|LockOnCharacter UMETA(DisplayName = "LockOnCharacter"),      		| CharAnimState = LockOnCharacter        |
+|ThirdPerson UMETA(DisplayName = "ThirdPerson"),                | CharAnimState = ThirdPerson        |
+|ZoomToThirdPerson UMETA(DisplayName = "RotateBeforeThirdPerson"),   	| CharAnimState = ZoomToThirdPerson        |
+
+
+|Properties (EditAnyWhere + BlueprintReadWrite)                  	|Note                         |
+|-----------------------------------------------------------------------|-----------------------------|
+|USceneComponent* RootScene;         				                        	| The RootScene      					|
+|USpringArmComponent* SpringArm;          					                   | The SpringArm         					|
+|FRotator SpringArmRotator = FRotator(-50, 0, 0);				            	| Used to rotate the SpringArm in Constructor		|
+|UCameraComponent* CameraComp;        					                       | Unit Max Run Speed          					|
+|APlayerController* PC;          				                             | Slow Down when EnemyUnit is Attacked				|
+|float CameraDistanceToCharacter;					                           	| Choose to Scale the Speed in "Run" 4 is Standard		|
+|float Margin = 30;      				                                    	| Stops when Position is only 100.f away	       		|
+|int32 ScreenSizeX;           				                                | Stops if Y-Position is only 400.f away        		|
+|int32 ScreenSizeY;         					                                 | The Damage that the Unit Makes when attacking        		|
+|int GetViewPortScreenSizesState = 1;      					                  | The Start Waypoint when Unit is in "Patrol"	        	|
+|float CamSpeed = 80;		                                           | Choose the Start UnitState. For Enemys it should be Patrol	|
+|float ZoomOutPosition = 20000.f;	                                | This is used to Switch the UnitState back from other States	|
+|float ZoomPosition = 1500.f;         			                         | Used for Healthbar Implementation.           			|
+|float ZoomThirdPersonPosition = 600.f;      					               	| MaxHealth of the Character. Use it to change MaxHealth        |
+|float CamRotationOffset = 11.5f;                                 | Location of the Healthbar realtive to the Character		|
+|float CameraAngles[4] = { 0.f, 90.f, 180.f, 270.f };		           | Choose a ProjectileBaseClass if you want to use a Projectile	|
+	
+
+|Properties (BlueprintReadWrite)                  		|Note                         |
+|---------------------------------------------------------------|-----------------------------|
+|float UnitControlTimer = 0.0f;        				| Used in UnitControllerBase Statemachine            |
+|bool ToggleUnitDetection = false;				| Is Used in ControllerBase to toggle unit to Attack |
+|AUnitBase* UnitToChase;       					| Is set to the Unit which should be attacked        |
+|TArray <AUnitBase*> UnitsToChase;          			| Array of all available Units		             |
+|float Health;							| Current Health of the Unit			     |
+|TArray <FVector> RunLocationArray;				| Used for MoveThroughWaypoints in the HUD	     |
+|int32 RunLocationArrayIterator;				| Used for the Iteration of the Array		     |
+|FVector RunLocation;						| Is the Location where the Unit should Run. Used in "Run"|
+|class ASelectedIcon* SelectedIcon;				| The Icon is Hidden when Character is not selected|
+|class AProjectile* Projectile;					| The Current Projectile|
+	
+|Functions (BlueprintCallable)                  		|Note                         |
+|---------------------------------------------------------------|-----------------------------|
+|void IsAttacked(AActor* AttackingCharacter);       		| Gets called when Unit is attacked. Called in UnitControllerBase |
+|void SetWalkSpeed(float Speed);      				| Set Max Walkspeed           |
+|bool SetNextUnitToChase();        				| Chooses UnitToChase from UnitsToChase (closest unit is choosen) |
+|void SetWaypoint(class AWaypoint* NewNextWaypoint);        	| Sets the new Waypoint. Unit walks to Waypoint in State "Patrol" |
+|void SetUnitState( TEnumAsByte<UnitData::EState> NewUnitState);| Used to Set the State of the Unit (UnitControllerBase->UnitControlStateMachine) |
+|TEnumAsByte<UnitData::EState> GetUnitState();       		| Get the current Unit State          		|
+|float GetHealth();       					| Get current health of the Unit          	|
+|void SetHealth(float NewHealth);       			| Set current health of the Unit         	|
+|float GetMaxHealth();      					| Get max health of the Unit            	|
+|void SetSelected();       					| Sets the SelectedIcon selected           	|
+|void SetDeselected();      					| Sets the SelectedIcon delected            	|
+|void SpawnSelectedIcon();       				| Spawns the SelectedIcon         		|	
+
+
+
+
+Here is a List of the Classes and there Functions ( V1.X.X):
 
 ### Class - CameraBase
 
