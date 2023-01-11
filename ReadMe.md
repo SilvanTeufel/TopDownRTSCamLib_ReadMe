@@ -32,7 +32,15 @@ Or Set Keybindings by yourself:
 
 ![image](https://user-images.githubusercontent.com/45244380/210752301-ea1f1aa5-5802-4594-8838-61cbf79ff117.png)
 
+## Enhanced Keyboard Settings
 
+AssetMangerClass in ProjectSettings:
+
+![image](https://user-images.githubusercontent.com/45244380/211891213-c16b45c3-25d7-4af2-bb5c-d4aeb124ceec.png)
+
+EnhancedIputComponentBase in ProjectSettings:
+
+![image](https://user-images.githubusercontent.com/45244380/211891263-032cfbc6-120c-40f3-82f6-b1d7cff938a3.png)
 
 ## Test Example Map
 
