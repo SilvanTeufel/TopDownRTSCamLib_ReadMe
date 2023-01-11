@@ -34,7 +34,7 @@ Or Set Keybindings by yourself:
 
 ## Enhanced Keyboard Settings
 
-AssetMangerClass in ProjectSettings:
+AssetMangerClass in ProjectSettings (Restart Project after change):
 
 ![image](https://user-images.githubusercontent.com/45244380/211891213-c16b45c3-25d7-4af2-bb5c-d4aeb124ceec.png)
 
