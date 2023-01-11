@@ -36,11 +36,11 @@ Or Set Keybindings by yourself:
 
 You can Change Inputs at: All\Engine\Plugins\TopDownRTSCamLib\Content\Blueprints\Controls
 
-AssetMangerClass in ProjectSettings (Restart Project after change):
+For GameplayTags you have to set AssetMangerClass in ProjectSettings (Restart Project after change):
 
 ![image](https://user-images.githubusercontent.com/45244380/211891213-c16b45c3-25d7-4af2-bb5c-d4aeb124ceec.png)
 
-EnhancedIputComponentBase in ProjectSettings:
+Go to ProjectSettings->Input and set EnhancedIputComponentBase:
 
 ![image](https://user-images.githubusercontent.com/45244380/211891263-032cfbc6-120c-40f3-82f6-b1d7cff938a3.png)
 
