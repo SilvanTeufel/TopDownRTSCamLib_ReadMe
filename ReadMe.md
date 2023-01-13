@@ -19,16 +19,18 @@ If the plugin is in another folder, you should copy it here.
 Open Unreal Editor. Click Edit -> Plugins to open the plugin window.
 Search for TopDownRTSCamLib and put a check mark at it.
 
+Go to the Example Map and use GameModeBase_BP
+
 ## Import Keyboard Settings and Maps and Modes
 
 Download here from Github:
 
-Input Backup 2023-01-04 092036.ini -> Project Settings -> Input -> Import
+Input Backup 2023-01-04 092036.ini -> Project Settings -> Input -> Import (Deprecated with new Version 2.1.1 use Enhanced Keyboard Inputs)
 Maps & Modes Backup 2023-01-04 211553.ini  -> Project Settings -> Maps and Modes -> Import
 
 These files should be also available inside the Plugins Folder in Documents/Inputs
 
-Or Set Keybindings by yourself:
+Or Set Keybindings by yourself: (Deprecated with new Version 2.1.1 use Enhanced Keyboard Inputs)
 
 ![image](https://user-images.githubusercontent.com/45244380/210752301-ea1f1aa5-5802-4594-8838-61cbf79ff117.png)
 
@@ -68,6 +70,7 @@ Parentclasses are:
 - CharacterBase
 - HUDBase
 - ControllerBase
+- CameraControllerBase (Child of ControllerBase)
 - SelectedCharacterIcon
 
 For CameraBase, if you want only to use the Functions and not run the Code in Tick and BeginPlay (which is automatically setup), just set the Variables to true:
