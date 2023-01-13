@@ -46,6 +46,12 @@ Go to ProjectSettings->Input and set EnhancedIputComponentBase:
 
 ![image](https://user-images.githubusercontent.com/45244380/211891263-032cfbc6-120c-40f3-82f6-b1d7cff938a3.png)
 
+YOu can set MappingContext and ControlAsset in the BP_CameraBase:
+
+![image](https://user-images.githubusercontent.com/45244380/212332329-42eaec24-7096-4728-8c8a-ede7846c0efc.png)
+
+![image](https://user-images.githubusercontent.com/45244380/212332385-9137f8ed-212e-4c99-bcb5-def35dd7160b.png)
+
 ## Test Example Map
 
 Open Unreal Editor. Open folder (In Unreal Editor folder tab):
