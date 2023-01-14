@@ -21,19 +21,6 @@ Search for TopDownRTSCamLib and put a check mark at it.
 
 Go to the Example Map and use GameModeBase_BP
 
-## Import Keyboard Settings and Maps and Modes
-
-Download here from Github:
-
-Input Backup 2023-01-04 092036.ini -> Project Settings -> Input -> Import (Deprecated with new Version 2.1.1 use Enhanced Keyboard Inputs)
-Maps & Modes Backup 2023-01-04 211553.ini  -> Project Settings -> Maps and Modes -> Import
-
-These files should be also available inside the Plugins Folder in Documents/Inputs
-
-Or Set Keybindings by yourself: (Deprecated with new Version 2.1.1 use Enhanced Keyboard Inputs)
-
-![image](https://user-images.githubusercontent.com/45244380/210752301-ea1f1aa5-5802-4594-8838-61cbf79ff117.png)
-
 ## Enhanced Keyboard Settings
 
 You can Change Inputs at: All\Engine\Plugins\TopDownRTSCamLib\Content\Blueprints\Controls
@@ -51,6 +38,19 @@ YOu can set MappingContext and ControlAsset in the BP_CameraBase:
 ![image](https://user-images.githubusercontent.com/45244380/212332329-42eaec24-7096-4728-8c8a-ede7846c0efc.png)
 
 ![image](https://user-images.githubusercontent.com/45244380/212332385-9137f8ed-212e-4c99-bcb5-def35dd7160b.png)
+
+## Import Keyboard Settings and Maps and Modes
+
+Download here from Github:
+
+Input Backup 2023-01-04 092036.ini -> Project Settings -> Input -> Import (Deprecated with new Version 2.1.1 use Enhanced Keyboard Inputs)
+Maps & Modes Backup 2023-01-04 211553.ini  -> Project Settings -> Maps and Modes -> Import
+
+These files should be also available inside the Plugins Folder in Documents/Inputs
+
+Or Set Keybindings by yourself: (Deprecated with new Version 2.1.1 use Enhanced Keyboard Inputs)
+
+![image](https://user-images.githubusercontent.com/45244380/210752301-ea1f1aa5-5802-4594-8838-61cbf79ff117.png)
 
 ## Test Example Map
 
